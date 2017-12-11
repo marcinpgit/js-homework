@@ -78,11 +78,11 @@ console.log('Twoja szczesliwa liczba to: ' + randomNum());
 
 console.log('ZADANIE_4');
 
-function get_dinner_price () {
+function getDinnerPrice () {
     var tip = 20;
     var price = 100;
     console.log(tip + price);
 }
 
-get_dinner_price();
+getDinnerPrice();
 
