@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const players = [
     { id: 1, name: 'Franek', level: 23, description: 'never played football' },
     { id: 2, name: 'Bolek', level: 12, description: 'love donuts' },
