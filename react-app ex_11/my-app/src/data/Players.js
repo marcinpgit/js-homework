@@ -10,3 +10,5 @@ export const players = [
     { id: 9, name: 'Wiktoria', level: 48, description: 'fast and furious' },
     { id: 10, name: 'Łukasz', level: 9, description: 'never seen playing' }
 ];
+
+export const tableHead = ['Id', 'Name', 'Level', 'Description'];
