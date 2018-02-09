@@ -7,12 +7,11 @@ import { players, tableHead } from '../data/Players';
 export class Main extends React.Component {
     render() {
         const playersId = Object.keys(players);
+        const tableHeader = Object.keys(tableHead);
         return (
         <table>
-            <th>{ tableHead[0] }</th>
-            <th>{ tableHead[1] }</th>
-            <th>{ tableHead[2] }</th>
-            <th>{ tableHead[3] }</th>
+            { tableHeader.map(th =>
+                <th>{ tableHead[th] }</th>)}
 
             { playersId.map(num =>
                 <tr key={num}>
