@@ -23,14 +23,11 @@ export default class extends React.Component {
         this.setState({toDoList: todos});
     }
 
-
     render() {
-        let addTask = this.addTask;
         return (
             <React.Fragment>
                 <ToDo todos={this.state.toDoList}/>
                 <AddToDo
-                    todos={this.state.toDoList}
                     addTask={this.addTask}/>
             </React.Fragment>
         );
