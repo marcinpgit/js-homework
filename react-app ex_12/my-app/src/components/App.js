@@ -15,6 +15,7 @@ export default class extends React.Component {
                 {name: 'Todo 5', isFinished: true}
             ]
         };
+        this.addTask = this.addTask.bind(this);
     }
 
     addTask = (newTodoName) => {

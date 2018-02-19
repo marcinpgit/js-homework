@@ -11,7 +11,7 @@ class ToDo extends React.Component {
             <React.Fragment>
                 <h3>Table with Tasks</h3>
                 <table>
-                    {todos.map(todo => <tr key={todo.id}>
+                    {todos.map((todo, id) => <tr key={id}>
                         {decorateIsFinished(todo.isFinished, todo.name)}
                     </tr>)}
                 </table>
