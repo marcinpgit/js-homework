@@ -1,5 +1,5 @@
 import React from 'react';
-// import {ToDo} from './ToDo';
+import ToDo from './ToDo';
 // import {AddToDo} from './AddToDo';
 
 export default class extends React.Component {
@@ -18,7 +18,10 @@ export default class extends React.Component {
 
     render() {
         return (
-            <h2>ex12</h2>
+            <React.Fragment>
+                <h2>ex12</h2>
+                <ToDo todos={this.state.toDoList} />
+            </React.Fragment>
         );
     }
 }
