@@ -9,12 +9,12 @@ class ToDo extends React.Component {
 
         return (
             <React.Fragment>
-                <h3>todo comp</h3>
-                <ul>
-                    {todos.map(todo => <li key={todo.id}>
+                <h3>Table with Tasks</h3>
+                <table>
+                    {todos.map(todo => <tr key={todo.id}>
                         {decorateIsFinished(todo.isFinished, todo.name)}
-                    </li>)}
-                </ul>
+                    </tr>)}
+                </table>
             </React.Fragment>
         )
     }

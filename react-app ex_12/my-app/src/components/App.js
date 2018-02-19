@@ -1,6 +1,7 @@
 import React from 'react';
 import ToDo from './ToDo';
-// import {AddToDo} from './AddToDo';
+import AddToDo from './AddToDo';
+
 
 export default class extends React.Component {
     constructor(props) {
@@ -16,11 +17,21 @@ export default class extends React.Component {
         };
     }
 
+    addTask = (newTodoName) => {
+        let newTodo = {name: newTodoName, isFinished: false};
+        let todos = [...this.state.toDoList, newTodo];
+        this.setState({toDoList: todos});
+    }
+
+
     render() {
+        let addTask = this.addTask;
         return (
             <React.Fragment>
-                <h2>ex12</h2>
-                <ToDo todos={this.state.toDoList} />
+                <ToDo todos={this.state.toDoList}/>
+                <AddToDo
+                    todos={this.state.toDoList}
+                    addTask={this.addTask}/>
             </React.Fragment>
         );
     }
