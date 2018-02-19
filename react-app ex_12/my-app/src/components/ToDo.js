@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 class ToDo extends React.Component {
     render() {
         const {todos} = this.props;

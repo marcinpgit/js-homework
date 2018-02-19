@@ -2,7 +2,6 @@ import React from 'react';
 import ToDo from './ToDo';
 import AddToDo from './AddToDo';
 
-
 export default class extends React.Component {
     constructor(props) {
         super(props);
