@@ -29,8 +29,12 @@ class App extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <ContactsList list={this.state.contacts}/>
-                <AddContact addContacts={this.addContacts}/>
+                <ContactsList
+                    list={this.state.contacts}
+                />
+                <AddContact
+                    addContacts={this.addContacts}
+                />
             </React.Fragment>
         );
     }

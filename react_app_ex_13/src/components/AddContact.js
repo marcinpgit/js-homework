@@ -24,16 +24,17 @@ class AddContact extends React.Component {
         return (
             <React.Fragment>
                 <h4>Please add new contact to the list:</h4>
-                <input
-                    type='text'
-                    onChange={this.handleChange}
-                />
-                <button
-                    type='button'
-                    onClick={() => addContacts(val)}
-                >
-                    Add Contact
-                </button>
+                <form>
+                    <input
+                        type='text'
+                        onChange={this.handleChange}
+                    />
+                    <button
+                        type='button'
+                        onClick={() => addContacts(val)}>
+                        Add Contact
+                    </button>
+                </form>
             </React.Fragment>
         );
     }

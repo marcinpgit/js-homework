@@ -12,6 +12,7 @@ class ContactsList extends React.Component {
                             <strong>{item.name}</strong><br/>
                             {item.phone + ', ' + item.email}<br/>
                             {item.category}
+                            <button>Remove Contact</button>
                         </li>
                     )}
                 </ul>
