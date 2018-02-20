@@ -2,7 +2,7 @@ import React from 'react';
 
 class ContactsList extends React.Component {
     render() {
-        const {list} = this.props;
+        const {list, removeContacts} = this.props;
 
         return (
             <React.Fragment>
@@ -12,7 +12,7 @@ class ContactsList extends React.Component {
                             <strong>{item.name}</strong><br/>
                             {item.phone + ', ' + item.email}<br/>
                             {item.category}
-                            <button>Remove Contact</button>
+                            <button onClick={() => removeContacts(item.id)}>Remove Contact</button>
                         </li>
                     )}
                 </ul>

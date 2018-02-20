@@ -8,30 +8,44 @@ class AddContact extends React.Component {
             value: ''
         };
 
-        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleChange(e) {
+    handleChange = ({ target: { name, value } }) => {
         this.setState({
-            value: e.target.value
-        });
+            [name]: value
+        })
+    };
+
+    handleSubmit(e) {
+        e.preventDefault();
+
+        this.props.addContacts(this.state);
+    }
+
+    renderInput(fieldContact) {
+        return (
+            <input
+                name={fieldContact}
+                value={this.state[fieldContact]}
+                onChange={this.handleChange}/>
+        )
     }
 
     render() {
-        const {addContacts} = this.props;
-        const val = this.state.value;
-
         return (
             <React.Fragment>
                 <h4>Please add new contact to the list:</h4>
-                <form>
-                    <input
-                        type='text'
-                        onChange={this.handleChange}
-                    />
-                    <button
-                        type='button'
-                        onClick={() => addContacts(val)}>
+                <form onSubmit={this.handleSubmit}>
+                    name
+                    {this.renderInput('name')}
+                    phone
+                    {this.renderInput('phone')}
+                    e-mail
+                    {this.renderInput('email')}
+                    category
+                    {this.renderInput('category')}
+                    <button>
                         Add Contact
                     </button>
                 </form>
