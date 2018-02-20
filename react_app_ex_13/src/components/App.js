@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ContactsList from './ContactsList';
+import AddContact from './AddContact';
 
 class App extends React.Component {
     constructor(props) {
@@ -16,11 +17,20 @@ class App extends React.Component {
 
     }
 
+    addContacts = (addPerson) => {
+        const newPerson = {name: addPerson};
+        const newContact = [...this.state.contacts, newPerson];
+
+        this.setState({
+            contacts: newContact
+        })
+    };
+
     render() {
         return (
             <React.Fragment>
-                <h3>Contact List of nice people:</h3>
                 <ContactsList list={this.state.contacts}/>
+                <AddContact addContacts={this.addContacts}/>
             </React.Fragment>
         );
     }
