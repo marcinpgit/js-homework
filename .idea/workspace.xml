@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a325dd6-ae67-4ca9-afe5-ef1cf23a7e53" name="Default" comment="ready to review @pukie">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react ex_11/my-app/public/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react ex_11/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react ex_11/my-app/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react ex_11/my-app/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react ex_11/my-app/package-lock.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react ex_11/my-app/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react ex_11/my-app/public/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react ex_11/my-app/public/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react ex_11/my-app/src/App.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react ex_11/my-app/src/App.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react ex_11/my-app/src/App.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react ex_11/my-app/src/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react ex_11/my-app/src/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react ex_11/my-app/src/logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react ex_11/my-app/src/registerServiceWorker.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-app ex_12/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-app ex_12/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-app ex_12/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-app ex_12/.idea/react-app ex_12.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react-app ex_12/.idea/workspace.xml" afterPath="$PROJECT_DIR$/react-app ex_12/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react-app ex_12/my-app/.gitignore" afterPath="$PROJECT_DIR$/react-app ex_12/my-app/.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,7 +22,62 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Players.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/data/Players.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Header.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/Header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Footer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/Footer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/Main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,6 +101,19 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/jquery_ex_1.js" />
         <option value="$PROJECT_DIR$/react ex_11/.gitignore" />
+        <option value="$PROJECT_DIR$/react-app ex_11/my-app/data/Players.js" />
+        <option value="$PROJECT_DIR$/react-app ex_11/my-app/components/Header.js" />
+        <option value="$PROJECT_DIR$/react-app ex_11/my-app/components/Footer.js" />
+        <option value="$PROJECT_DIR$/react-app ex_11/my-app/components/App.js" />
+        <option value="$PROJECT_DIR$/react-app ex_11/my-app/src/index.js" />
+        <option value="$PROJECT_DIR$/react-app ex_11/my-app/src/components/App.js" />
+        <option value="$PROJECT_DIR$/react-app ex_11/my-app/src/components/main.js" />
+        <option value="$PROJECT_DIR$/react-app ex_11/my-app/src/components/Header.js" />
+        <option value="$PROJECT_DIR$/react-app ex_11/my-app/src/components/Footer.js" />
+        <option value="$PROJECT_DIR$/react-app ex_11/my-app/src/data/Players.js" />
+        <option value="$PROJECT_DIR$/react-app ex_11/my-app/package-lock.json" />
+        <option value="$PROJECT_DIR$/react-app ex_11/my-app/src/components/Main.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -69,6 +129,10 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/react-app ex_11/my-app/node_modules" />
+    <handled-path value="$PROJECT_DIR$/react-app ex_12/my-app/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -91,6 +155,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,22 +163,10 @@
               <item name="js-homework" type="b2602c69:ProjectViewProjectNode" />
               <item name="js-homework" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="js-homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js-homework" type="462c0819:PsiDirectoryNode" />
-              <item name="react ex_11" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="js-homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js-homework" type="462c0819:PsiDirectoryNode" />
-              <item name="react ex_11" type="462c0819:PsiDirectoryNode" />
-              <item name="my-app" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -125,6 +178,13 @@
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/react-app ex_11/my-app/src" />
+      <recent name="$PROJECT_DIR$/react-app ex_11/my-app/src/components" />
+      <recent name="$PROJECT_DIR$/react-app ex_11/my-app/data" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -161,6 +221,10 @@
       <workItem from="1517447139775" duration="5000" />
       <workItem from="1517447497366" duration="263000" />
       <workItem from="1517447817118" duration="327000" />
+      <workItem from="1517448372618" duration="231000" />
+      <workItem from="1517523779089" duration="7354000" />
+      <workItem from="1518726320485" duration="223000" />
+      <workItem from="1519078306735" duration="70000" />
     </task>
     <task id="LOCAL-00001" summary="solution">
       <created>1515012600846</created>
@@ -180,7 +244,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17828000" />
+    <option name="totallyTimeSpent" value="25706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
@@ -221,6 +285,94 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/data/Players.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/Footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/data/Players.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/Footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/jquery_ex_1.js" />
     <entry file="file://$PROJECT_DIR$/index.html" />
@@ -289,28 +441,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/jquery_ex_1.js" />
-    <entry file="file://$PROJECT_DIR$/react ex_11/.gitignore">
+    <entry file="file://$PROJECT_DIR$/react ex_11/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/react ex_11/my-app/src/App.css" />
+    <entry file="file://$PROJECT_DIR$/react ex_11/my-app/src/App.js" />
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+        <state relative-caret-position="128">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/Footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react ex_11/my-app/src/App.css">
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/data/Players.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="76" column="25" lean-forward="false" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/node_modules/react-bootstrap/lib/Table.js" />
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/node_modules/react-bootstrap/es/utils/StyleConfig.js" />
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react ex_11/my-app/src/App.js">
+    <entry file="file://$PROJECT_DIR$/react-app ex_11/my-app/src/components/Main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
