@@ -1,20 +1,17 @@
 import React from 'react';
 
 class AddContact extends React.Component {
-    constructor(props) {
-        super(props);
 
-        this.state = {
-            contact: {
-                name: 'contactName',
-                phone: 'contactEmail',
-                email: 'contactEmail',
-                category: []
-            }
-        };
-    }
+    state = {
+        contact: {
+            contactName: '',
+            contactPhone: '',
+            contactEmail: '',
+            contactCategory: []
+        }
+    };
 
-    handleChange = ({ target: { name, value } }) => {
+    handleChange = ({target: {name, value}}) => {
         this.setState({
             [name]: value
         })
@@ -41,13 +38,13 @@ class AddContact extends React.Component {
                 <h4>Please add new contact to the list:</h4>
                 <form onSubmit={this.handleSubmit}>
                     name
-                    {this.renderInput('name')}
+                    {this.renderInput('contactName')}
                     phone
-                    {this.renderInput('phone')}
+                    {this.renderInput('contactPhone')}
                     e-mail
-                    {this.renderInput('email')}
+                    {this.renderInput('contactEmail')}
                     category
-                    {this.renderInput('category')}
+                    {this.renderInput('contactCategory')}
                     <button>
                         Add Contact
                     </button>
