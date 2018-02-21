@@ -5,10 +5,12 @@ class AddContact extends React.Component {
         super(props);
 
         this.state = {
-            name: 'contactName',
-            phone: 'contactEmail',
-            email: 'contactEmail',
-            category: ''
+            contact: {
+                name: 'contactName',
+                phone: 'contactEmail',
+                email: 'contactEmail',
+                category: []
+            }
         };
     }
 
