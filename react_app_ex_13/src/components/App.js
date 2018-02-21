@@ -17,7 +17,7 @@ class App extends React.Component {
 
     }
 
-    addContacts = ({contactName, contactPhone, contactEmail, contactCategory}) => {
+    addContact = ({contactName, contactPhone, contactEmail, contactCategory}) => {
         this.setState({
             contacts: this.state.contacts.concat({
                 id: Date.now().toString(32),
@@ -40,10 +40,10 @@ class App extends React.Component {
             <React.Fragment>
                 <ContactsList
                     list={this.state.contacts}
-                    removeContacts={this.removeContact}
+                    removeContact={this.removeContact}
                 />
                 <AddContact
-                    addContacts={this.addContacts}
+                    addContact={this.addContact}
                 />
             </React.Fragment>
         );

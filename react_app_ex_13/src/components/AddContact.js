@@ -5,10 +5,11 @@ class AddContact extends React.Component {
         super(props);
 
         this.state = {
-            value: ''
+            name: 'contactName',
+            phone: 'contactEmail',
+            email: 'contactEmail',
+            category: ''
         };
-
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange = ({ target: { name, value } }) => {
@@ -17,11 +18,11 @@ class AddContact extends React.Component {
         })
     };
 
-    handleSubmit(e) {
+    handleSubmit = (e) => {
         e.preventDefault();
 
-        this.props.addContacts(this.state);
-    }
+        this.props.addContact(this.state);
+    };
 
     renderInput(fieldContact) {
         return (
