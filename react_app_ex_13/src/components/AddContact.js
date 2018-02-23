@@ -7,7 +7,7 @@ class AddContact extends React.Component {
             contactName: '',
             contactPhone: '',
             contactEmail: '',
-            contactCategory: []
+            contactCategory: ''    //add familyGroup, WorkGroup
         }
     };
 
