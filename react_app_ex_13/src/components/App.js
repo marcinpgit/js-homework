@@ -11,10 +11,9 @@ class App extends React.Component {
             contacts: [
                 {id: '1', name: 'Aleksandra Kowalska', phone: '234 345 456', email: 'ak@mail.com', category: 'family'},
                 {id: '2', name: 'Monika Nowak', phone: '456 234 567', email: 'mw@mail.com', category: 'family, work'},
-                {id: '3', name: 'Wiktoria Owocowa', phone: '987 654 324', email: 'wo@mail.com', category: 'work'}
+                {id: '3', name: 'Wiktoria Owocowa', phone: '987 654 324', email: 'wo@mail.com', category: 'family'}
             ]
         };
-
     }
 
     addContact = ({contactName, contactPhone, contactEmail, contactCategory}) => {
