@@ -1,5 +1,6 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
+import { Form, Button, Header } from 'semantic-ui-react';
 
 const initialState = {
     contactName: '',
@@ -37,20 +38,30 @@ class AddContact extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <h4>Please add new contact to the list:</h4>
-                <form onSubmit={this.handleSubmit}>
-                    <label>Name</label>
-                    {this.renderInput('contactName')}
-                    <label>Phone</label>
-                    {this.renderInput('contactPhone')}
-                    <label>E-mail</label>
-                    {this.renderInput('contactEmail')}
-                    <label>Category</label>
-                    {this.renderInput('contactCategory')}
-                    <button>
+                <Header as='h4' textAlign='center'>
+                    Please add new contact to the list
+                </Header>
+                <Form onSubmit={this.handleSubmit}>
+                    <Form.Field>
+                        <label>Full Name</label>
+                        {this.renderInput('contactName')}
+                    </Form.Field>
+                    <Form.Field>
+                        <label>Phone number</label>
+                        {this.renderInput('contactPhone')}
+                    </Form.Field>
+                    <Form.Field>
+                        <label>E-mail addres</label>
+                        {this.renderInput('contactEmail')}
+                    </Form.Field>
+                    <Form.Field>
+                        <label>Category (work, family, friends etc.)</label>
+                        {this.renderInput('contactCategory')}
+                    </Form.Field>
+                    <Button>
                         Add Contact
-                    </button>
-                </form>
+                    </Button>
+                </Form>
             </React.Fragment>
         );
     }
@@ -62,11 +73,11 @@ export default connect(
     }),
     dispatch => ({
         addContact: ({
-            contactName,
-            contactPhone,
-            contactEmail,
-            contactCategory
-        }) =>
+                         contactName,
+                         contactPhone,
+                         contactEmail,
+                         contactCategory
+                     }) =>
             dispatch({
                 type: 'ADD_CONTACT',
                 contactName,

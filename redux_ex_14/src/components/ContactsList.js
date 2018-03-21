@@ -1,5 +1,6 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
+import { Button, Header } from 'semantic-ui-react';
 
 class ContactsList extends React.Component {
 
@@ -9,19 +10,18 @@ class ContactsList extends React.Component {
         console.log(this.props.list);
 
         return (
-            <React.Fragment>
-                <h3>Contact List of nice people:</h3>
                 <ul>
+                    <Header as='h2' textAlign='center'>
+                        Your Contact List:
+                    </Header>
                     {contacts.map((item, id) => <li key={id}>
                             <strong>{item.name}</strong><br/>
                             {item.phone + ', ' + item.email}<br/>
-                            {item.category}
-                            <button onClick={() => this.props.removeContact(item.id)}>Remove Contact</button>
+                            {item.category}<br/>
+                            <Button secondary onClick={() => this.props.removeContact(item.id)}>Remove Contact</Button>
                         </li>
                     )}
                 </ul>
-            </React.Fragment>
-
         );
     }
 }
