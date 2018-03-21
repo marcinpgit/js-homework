@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Button, Header } from 'semantic-ui-react';
+import { Button, Header, Icon } from 'semantic-ui-react';
 
 class ContactsList extends React.Component {
 
@@ -14,11 +14,11 @@ class ContactsList extends React.Component {
                     <Header as='h2' textAlign='center'>
                         Your Contact List:
                     </Header>
-                    {contacts.map((item, id) => <li key={id}>
+                    {contacts.map((item, id) => <li key={id}><Icon name='user'/>
                             <strong>{item.name}</strong><br/>
                             {item.phone + ', ' + item.email}<br/>
                             {item.category}<br/>
-                            <Button secondary onClick={() => this.props.removeContact(item.id)}>Remove Contact</Button>
+                            <Button basic size='small' onClick={() => this.props.removeContact(item.id)}>Remove Contact</Button>
                         </li>
                     )}
                 </ul>

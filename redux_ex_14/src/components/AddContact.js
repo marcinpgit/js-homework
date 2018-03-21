@@ -58,7 +58,7 @@ class AddContact extends React.Component {
                         <label>Category (work, family, friends etc.)</label>
                         {this.renderInput('contactCategory')}
                     </Form.Field>
-                    <Button>
+                    <Button secondary>
                         Add Contact
                     </Button>
                 </Form>
