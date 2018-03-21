@@ -1,12 +1,14 @@
-import { createStore, combineReducers, compose } from 'redux';
-import thunk from 'thunk';
+import { createStore, combineReducers } from 'redux';
+
+import contacts from './state/contacts';
 
 const reducer = combineReducers({
-
+    contacts
 });
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(
+    reducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
 
-const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));
-
-export default store;
+export default store

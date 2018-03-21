@@ -1,7 +1,5 @@
-//Action types
+const initialState = {
+    data: []
+};
 
-//Action creators
 
-//Initial state
-
-//Reducer
