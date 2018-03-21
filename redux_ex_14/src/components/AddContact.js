@@ -1,15 +1,16 @@
 import React from 'react';
+import {connect} from 'react-redux';
+
+const initialState = {
+    contactName: '',
+    contactPhone: '',
+    contactEmail: '',
+    contactCategory: ''
+};
 
 class AddContact extends React.Component {
 
-    state = {
-        contact: {
-            contactName: '',
-            contactPhone: '',
-            contactEmail: '',
-            contactCategory: ''
-        }
-    };
+    state = initialState;
 
     handleChange = ({target: {name, value}}) => {
         this.setState({
@@ -21,6 +22,7 @@ class AddContact extends React.Component {
         e.preventDefault();
 
         this.props.addContact(this.state);
+        this.setState(initialState);
     };
 
     renderInput(fieldContact) {
@@ -37,13 +39,13 @@ class AddContact extends React.Component {
             <React.Fragment>
                 <h4>Please add new contact to the list:</h4>
                 <form onSubmit={this.handleSubmit}>
-                    name
+                    <label>Name</label>
                     {this.renderInput('contactName')}
-                    phone
+                    <label>Phone</label>
                     {this.renderInput('contactPhone')}
-                    e-mail
+                    <label>E-mail</label>
                     {this.renderInput('contactEmail')}
-                    category
+                    <label>Category</label>
                     {this.renderInput('contactCategory')}
                     <button>
                         Add Contact
@@ -54,4 +56,23 @@ class AddContact extends React.Component {
     }
 }
 
-export default AddContact;
+export default connect(
+    state => ({
+        contacts: state.data
+    }),
+    dispatch => ({
+        addContact: ({
+            contactName,
+            contactPhone,
+            contactEmail,
+            contactCategory
+        }) =>
+            dispatch({
+                type: 'ADD_CONTACT',
+                contactName,
+                contactPhone,
+                contactEmail,
+                contactCategory
+            })
+    })
+)(AddContact)

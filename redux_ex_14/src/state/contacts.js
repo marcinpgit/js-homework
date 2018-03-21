@@ -1,5 +1,5 @@
 const initialState = {
-    contacts: []
+    data: []
 };
 
 export default (state = initialState, action = {}) => {
@@ -7,18 +7,18 @@ export default (state = initialState, action = {}) => {
         case 'ADD_CONTACT':
             return {
                 ...state,
-                contacts: state.contacts.concat({
+                data: state.data.concat({
                     id: Date.now().toString(32),
                     name: action.contactName,
                     phone: action.contactPhone,
                     email: action.contactEmail,
-                    category: action.contactCategory ? contactCategory : 'uncategorised'.toUpperCase()
+                    category: action.contactCategory
                 })
             };
         case 'REMOVE_CONTACT':
             return {
                 ...state,
-                contacts: state.contacts.filter(list => list.id !== action.listId)
+                data: state.data.filter(list => list.id !== action.listId)
             };
         default:
             return state;
