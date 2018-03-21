@@ -16,23 +16,23 @@ class App extends React.Component {
         };
     }
 
-    addContact = ({contactName, contactPhone, contactEmail, contactCategory}) => {
-        this.setState({
-            contacts: this.state.contacts.concat({
-                id: Date.now().toString(32),
-                name: contactName,
-                phone: contactPhone,
-                email: contactEmail,
-                category: contactCategory ? contactCategory : 'uncategorised'.toUpperCase()
-            })
-        })
-    };
+    // addContact = ({contactName, contactPhone, contactEmail, contactCategory}) => {
+    //     this.setState({
+    //         contacts: this.state.contacts.concat({
+    //             id: Date.now().toString(32),
+    //             name: contactName,
+    //             phone: contactPhone,
+    //             email: contactEmail,
+    //             category: contactCategory ? contactCategory : 'uncategorised'.toUpperCase()
+    //         })
+    //     })
+    // };
 
-    removeContact = listId => {
-        this.setState({
-            contacts: this.state.contacts.filter(list => list.id !== listId)
-        })
-    };
+    // removeContact = listId => {
+    //     this.setState({
+    //         contacts: this.state.contacts.filter(list => list.id !== listId)
+    //     })
+    // };
 
     render() {
         return (
