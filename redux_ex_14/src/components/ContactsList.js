@@ -5,9 +5,8 @@ import { Button, Header, Icon } from 'semantic-ui-react';
 class ContactsList extends React.Component {
 
     render() {
-        const { contacts } = this.props;
 
-        console.log(this.props.list);
+        const { contacts } = this.props;
 
         return (
                 <ul>
