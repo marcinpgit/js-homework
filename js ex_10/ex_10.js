@@ -21,3 +21,27 @@ var workers = [
     { id: 14, name: "Agata",      type: "P", office: "GD", salary: 230 },
     { id: 15, name: "Magda",      type: "P", office: "KO", salary: 220 }
 ];
+
+// Firma X posiada trzy aktualnie biura zlokalizowane w Gdansku, Gliwicach i Koszalinie a w niedalekiej przyszlosci planuje otworzyc nowe biuro w Poznaniu.
+//     Wymagania aplikacji: Na podstawie dostarczonych danych, prosze stworzyc obiekt Firma.
+//
+//     Firma powinna posiadac:
+//     - liste Biur (tablice)
+//
+// Natomiast Kazde biuro powinno posiadac liste Pracownikůw, id, name, oraz informacje czy jest glůwna siedziba.
+//     Kazdy pracownik ma propercje office, ktůra pozwala nam rozpoznac, do ktůrego biura nalezy (id w offices).
+//
+// Do stworzenia struktury firmy uzyj przykladowych danych z zmiennych offices i workers.
+//     Uzywajac obiektu ĄFirmaĒ wykonaj nastepujace operacje (w kolejnosci):
+//
+// 1) Wyswietl, informacje o biurze w Gliwicach (lokalizacja, liczba przypisanych pracownikůw, srednia pensja),
+// 2) Dodaj nowe biuro (w Poznaniu),
+// 3) Dodaj nowego pracownika do biura w Poznaniu: { id: 16, name: "Olek", type: "M", office: "PO", salary: 500 }
+// 4) Wyswietl, informacje o biurze w Poznaniu
+// 5) Wyswietl srednia pensje w calej firmie,
+//     6) Wyswietl najlepiej oplacanego pracownika w poszczegůlnych biurach,
+//     7) Wyswietl najlepiej oplacanego pracownika w calej firmie oraz nazwe jego biura.
+//
+//
+//     Uzyj konsoli do wyswietlenia danych. (wolaj w console.log funkcje, ktůre zwracaja zadane wartosci, np. najlepiej oplacanego pracowinika)
+// Uzywaj skladni z ES6 lub ES5 (badz konsekwentny)
