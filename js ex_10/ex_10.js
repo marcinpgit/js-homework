@@ -24,7 +24,7 @@ let workers = [
 
 let company = {};
 
-//przygotowanie struktury firmy
+// preparation of the company structure
 
 const addOfficesToCompany = () => {
     company.offices = offices.map(office => {
@@ -40,7 +40,7 @@ const getAvgSalaryInOffice = workers => {
     return workers.reduce((acc, next) => acc + next.salary, 0) / workers.length;
 };
 
-const getOfficeInformation = officeId => {
+const getOfficeInfo = officeId => {
     const office = company.offices.find(({ id }) => id === officeId);
     return {
         localization: office.name,
@@ -51,13 +51,13 @@ const getOfficeInformation = officeId => {
 
 // exercise 2
 
-const addNewOffice = (office, headquarter = false, workers = []) => {
-    company.offices.push(Object.assign(office, {headquarter, workers}));
+const addOffice = (office, headquarter = false, workers = []) => {
+    company.offices.push(Object.assign(office, { headquarter, workers }));
 };
 
 // exercise 3
 
-const addNewWorker = worker => {
+const addWorker = worker => {
     company.offices
         .find(office => office.id === worker.office)
         .workers.push(worker);
@@ -66,9 +66,55 @@ const addNewWorker = worker => {
 // exercise 5
 
 const getAvgSalaryInCompany = () => {
-    return comapny.offices
+    return company.offices
         .reduce((acc, next) => acc + getAvgSalaryInOffice(next.workers), 0) / company.offices.length;
 };
 
-// exercise 5
+// exercise 6
 
+const getBestPaidWorkers = workers => {
+    const salaries = workers.map(({ salary }) => salary);
+    const highestSalary = Math.max(...salaries);
+
+    return workers.filter(({ salary }) => salary === highestSalary);
+};
+
+const getBestPaidWorkersByOffice = () => {
+    return company.offices
+        .map(office => getBestPaidWorkers(office.workers))
+        .reduce((acc, next) => acc.concat(next), [])
+        .sort((prev, next) => next.salary - prev.salary);
+};
+
+// exercise 7
+
+const getBestPaidWorkersInCompany = () => {
+    const workers = getBestPaidWorkersByOffice();
+    return getBestPaidWorkers(workers);
+};
+
+// adding the company with offices and creating a new office and worker,
+
+addOfficesToCompany();
+
+const newOffice = {
+    id: 'PO',
+    name: 'Poznań'
+};
+
+const newWorker = {
+    id: 16,
+    name: "Olek",
+    type: "M",
+    office: "PO",
+    salary: 500 };
+
+console.log('Company: ', company);
+
+console.log('exercise 1 ', getOfficeInfo('GL'));
+console.log('exercise 2 ', addOffice(newOffice));
+console.log('exercise 3 ', addWorker(newWorker));
+console.log('exercise 4 ', getOfficeInfo('PO'));
+console.log('exercise 5 ', getAvgSalaryInCompany());
+console.log('exercise 6 ', getBestPaidWorkersByOffice());
+console.log('exercise 7 ', getBestPaidWorkersInCompany());
