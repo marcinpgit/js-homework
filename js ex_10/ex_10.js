@@ -1,10 +1,10 @@
-var offices = [
+let offices = [
     { id: "GD", name: "Gdańsk", headquarter: true },
     { id: "GL", name: "Gliwice" },
     { id: "KO", name: "Koszalin" }
 ];
 
-var workers = [
+let workers = [
     { id: 1,  name: "Bartek",     type: "P", office: "GD", salary: 300 },
     { id: 2,  name: "Wojtek",     type: "P", office: "GD", salary: 210 },
     { id: 3,  name: "Piotr",      type: "M", office: "GL", salary: 250 },
@@ -22,26 +22,37 @@ var workers = [
     { id: 15, name: "Magda",      type: "P", office: "KO", salary: 220 }
 ];
 
-// Firma X posiada trzy aktualnie biura zlokalizowane w Gdansku, Gliwicach i Koszalinie a w niedalekiej przyszlosci planuje otworzyc nowe biuro w Poznaniu.
-//     Wymagania aplikacji: Na podstawie dostarczonych danych, prosze stworzyc obiekt Firma.
-//
-//     Firma powinna posiadac:
-//     - liste Biur (tablice)
-//
-// Natomiast Kazde biuro powinno posiadac liste Pracownikůw, id, name, oraz informacje czy jest glůwna siedziba.
-//     Kazdy pracownik ma propercje office, ktůra pozwala nam rozpoznac, do ktůrego biura nalezy (id w offices).
-//
-// Do stworzenia struktury firmy uzyj przykladowych danych z zmiennych offices i workers.
-//     Uzywajac obiektu ĄFirmaĒ wykonaj nastepujace operacje (w kolejnosci):
-//
-// 1) Wyswietl, informacje o biurze w Gliwicach (lokalizacja, liczba przypisanych pracownikůw, srednia pensja),
-// 2) Dodaj nowe biuro (w Poznaniu),
-// 3) Dodaj nowego pracownika do biura w Poznaniu: { id: 16, name: "Olek", type: "M", office: "PO", salary: 500 }
-// 4) Wyswietl, informacje o biurze w Poznaniu
-// 5) Wyswietl srednia pensje w calej firmie,
-//     6) Wyswietl najlepiej oplacanego pracownika w poszczegůlnych biurach,
-//     7) Wyswietl najlepiej oplacanego pracownika w calej firmie oraz nazwe jego biura.
-//
-//
-//     Uzyj konsoli do wyswietlenia danych. (wolaj w console.log funkcje, ktůre zwracaja zadane wartosci, np. najlepiej oplacanego pracowinika)
-// Uzywaj skladni z ES6 lub ES5 (badz konsekwentny)
+let company = {};
+
+//przygotowanie struktury firmy
+
+const addOfficesToCompany = () => {
+    company.offices = offices.map(office => {
+        office.workers = workers.filter(worker => office.id === worker.office);
+        office.headquarter = office.headquarter || false;
+        return office;
+    });
+};
+
+// exercise 1
+
+const getAvgSalaryInOffice = workers => {
+    return workers.reduce((acc, next) => acc + next.salary, 0) / workers.length;
+};
+
+const getOfficeInformation = officeId => {
+    const office = company.offices.find(({ id }) => id === officeId);
+    return {
+        localization: office.name,
+        numberOfWorkers: office.workers.length,
+        avgSalary: getAvgSalaryInOffice(office.workers)
+    }
+};
+
+// exercise 2
+
+const addNewOffice = (office, headquarter = false, workers = []) => {
+    company.offices.push(Object.assign(office, {headquarter, workers}));
+};
+
+// exercise 3
