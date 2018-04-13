@@ -1,9 +1,9 @@
-##Zadanie 10
+## Zadanie 10
 
 Firma X posiada trzy aktualnie biura zlokalizowane w Gdansku, Gliwicach i Koszalinie a w niedalekiej przyszlosci planuje otworzyc nowe biuro w Poznaniu.
 Wymagania aplikacji: Na podstawie dostarczonych danych, prosze stworzyc obiekt Firma.
 
-####Firma powinna posiadac:
+#### Firma powinna posiadac:
 - liste Biur (tablice)
 
 Natomiast Kazde biuro powinno posiadac liste Pracownikow, id, name, oraz informacje czy jest glowna siedziba.
@@ -11,7 +11,7 @@ Natomiast Kazde biuro powinno posiadac liste Pracownikow, id, name, oraz informa
 
 Do stworzenia struktury firmy uzyj przykladowych danych z zmiennych offices i workers.
 
-####Uzywajac obiektu Firma wykonaj nastepujace operacje (w kolejnosci):
+#### Uzywajac obiektu Firma wykonaj nastepujace operacje (w kolejnosci):
 
 1) Wyswietl, informacje o biurze w Gliwicach (lokalizacja, liczba przypisanych pracownikow, srednia pensja),
 2) Dodaj nowe biuro (w Poznaniu),
