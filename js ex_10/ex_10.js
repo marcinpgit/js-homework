@@ -56,3 +56,19 @@ const addNewOffice = (office, headquarter = false, workers = []) => {
 };
 
 // exercise 3
+
+const addNewWorker = worker => {
+    company.offices
+        .find(office => office.id === worker.office)
+        .workers.push(worker);
+};
+
+// exercise 5
+
+const getAvgSalaryInCompany = () => {
+    return comapny.offices
+        .reduce((acc, next) => acc + getAvgSalaryInOffice(next.workers), 0) / company.offices.length;
+};
+
+// exercise 5
+
