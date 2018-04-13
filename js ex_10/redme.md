@@ -22,5 +22,5 @@ Do stworzenia struktury firmy uzyj przykladowych danych z zmiennych offices i wo
 7) Wyswietl najlepiej oplacanego pracownika w calej firmie oraz nazwe jego biura.
 
 
-Uzyj konsoli do wyswietlenia danych. (wolaj w console.log funkcje, ktůre zwracaja zadane wartosci, np. najlepiej oplacanego pracowinika)
+Uzyj konsoli do wyswietlenia danych. (wolaj w console.log funkcje, ktore zwracaja zadane wartosci, np. najlepiej oplacanego pracowinika)
 Uzywaj skladni z ES6 lub ES5 (badz konsekwentny)
